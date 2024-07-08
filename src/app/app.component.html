@@ -1,1 +1,6 @@
-<h1>Primer cale</h1>
+<div *ngIf="this.user != undefined">
+  <h1>{{this.user[0].username}}</h1>
+  <h2>{{this.user[0].id}}</h2>
+  <h2>{{this.user[0].email}}</h2>
+  <h2>{{this.user[0].password}}</h2>
+</div>
