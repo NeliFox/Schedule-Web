@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
 
 @Component({
@@ -8,6 +8,9 @@ import { lastValueFrom } from 'rxjs';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+
+  @Input() componenteHijo : any = null;
+  
   title = 'ScheduleWeb';
   user : any;
 
